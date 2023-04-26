@@ -5,7 +5,7 @@ export declare function isValidDecimalMonetaryValue(amountValue: AmountValue | a
 export declare function isNegative(amountValue: AmountValue): boolean;
 export declare function toNumber(string: string): number;
 export declare function toString(amountValue: AmountValue): AmountValue;
-export declare function toAmountInKobo(amountValue: AmountValue): number;
-export declare const getAmountValueInKobo: (amount: AmountValue) => number;
+export declare function toAmountInKobo(amountValue: AmountValue): string;
+export declare const getAmountValueInKobo: (amount: AmountValue) => number | string;
 export declare const getChannels: (channelsArrary: PaymentChannels[]) => string;
 export {};
