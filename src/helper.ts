@@ -52,10 +52,10 @@ export function toString(amountValue: AmountValue) {
 }
 
 export function toAmountInKobo(amountValue: AmountValue) {
-  if (typeof amountValue === 'string') {
-    return toNumber(amountValue) * 100;
+   if (typeof amountValue === 'string') {
+    return (toNumber(amountValue) * 100).toFixed(2);
   }
-  return amountValue * 100;
+  return (amountValue * 100).toFixed(2);
 }
 
 export const getAmountValueInKobo = (amount: AmountValue): number => {
